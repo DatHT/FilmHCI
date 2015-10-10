@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
     private ViewPager viewPager;
     private ViewPageAdapter adapter;
     SlidingTabLayout tabs;
-    CharSequence title[] = {"Phim", "Tìm kiếm", "Khuyến Mãi"};
-    int numOftabs = 3;
+    CharSequence title[] = {"Phim", "Tìm kiếm"};
+    int numOftabs = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -84,14 +84,12 @@ public class DetailActivity extends YouTubeBaseActivity implements View.OnClickL
         mAddButton.animate().alpha(1.0f); // enable floating button here
         getPhoto();
 
-        //enable floadting button
+        //enable floatting button
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                Intent intent = new Intent(this, BookFilmActivity.class);
+                Intent intent = new Intent(getBaseContext(),BookFilmActivity.class);
                 startActivity(intent);
             }
         });
