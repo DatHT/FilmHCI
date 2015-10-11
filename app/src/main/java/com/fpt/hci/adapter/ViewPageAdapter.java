@@ -5,7 +5,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.fpt.hci.tabs.TabFilm;
-import com.fpt.hci.tabs.TabPromotion;
 import com.fpt.hci.tabs.TabSearch;
 
 /**
@@ -27,12 +26,9 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
         if (position == 0) {
             TabFilm film = new TabFilm();
             return film;
-        }else if (position == 1) {
+        }else {
             TabSearch tabSearch = new TabSearch();
             return tabSearch;
-        }else {
-            TabPromotion tabPromotion = new TabPromotion();
-            return tabPromotion;
         }
 
     }
