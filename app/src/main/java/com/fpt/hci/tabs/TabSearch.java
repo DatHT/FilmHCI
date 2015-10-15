@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.TabHost;
 
 import com.fpt.hci.activity.R;
+import com.fpt.hci.activity.SearchActivity;
 
 /**
  * Created by Daniel on 9/24/2015.
@@ -28,7 +29,8 @@ public class TabSearch extends Fragment {
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getActivity(), SearchActivity.class);
+                startActivity(intent);
             }
         });
         return v;
