@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TabHost;
 import android.widget.TextView;
 
@@ -30,7 +31,7 @@ import java.util.Calendar;
  */
 public class TabSearch extends Fragment {
 
-    Button btnSubmit;
+    ImageButton btnSubmit;
     TextView txtTimeFrom;
     TextView txtTimeTo;
 
@@ -39,7 +40,7 @@ public class TabSearch extends Fragment {
         View v = inflater.inflate(R.layout.tab_search, container, false);
         txtTimeFrom = (TextView) v.findViewById(R.id.txtTimeFrom);
         txtTimeTo = (TextView) v.findViewById(R.id.txtTimeTo);
-        btnSubmit = (Button) v.findViewById(R.id.btnSubmit);
+        btnSubmit = (ImageButton) v.findViewById(R.id.btnSubmit);
         final Calendar c = Calendar.getInstance();
         int hour = c.get(Calendar.HOUR_OF_DAY);
         int minute = c.get(Calendar.MINUTE);
