@@ -48,7 +48,7 @@ public class TabFilm extends Fragment {
                 intent.putExtra(DetailActivity.EXTRA_PARAM_ID, position);
                 ImageView placeImage = (ImageView) view.findViewById(R.id.placeImage);
                 LinearLayout placeHoldername = (LinearLayout) view.findViewById(R.id.placeNameHolder);
-                Pair<View, String > imagePair = Pair.create((View) placeImage, "tImage");
+                Pair<View, String> imagePair = Pair.create((View) placeImage, "tImage");
                 Pair<View, String> holderPair = Pair.create((View) placeHoldername, "tNameHolder");
                 ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(),
                         imagePair, holderPair);
